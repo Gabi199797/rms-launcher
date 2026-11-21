@@ -1,0 +1,29 @@
+{
+  "product": "RMS GRAPHICS",
+  "app": "RMS GRAPHICS Launcher",
+  "version": 6,
+  "updateDate": "21.11.2026",
+ "megaUrl": "https://pub-5bd29ae0d24842d1a2217c54005922bb.r2.dev/RMS_GRAPHICS.rar",
+  "sizeGb": 2.6,
+  "changelog": [
+    {
+      "v": "Launcher 6.4.6",
+      "date": "21.11.2026",
+      "items": [
+        { "k": "new", "ro": "Soarele a primit un rework complet pe toate vremile .", "en": "The sun has received a complete rework for all weather conditions." },
+        { "k": "new", "ro": "Soarele de acum o sa aiba razele lui in forma de stea .", "en": "The sun, as it is now, will have its rays in the shape of a star." },
+        { "k": "new", "ro": "Razele Soarelui apare prin frunzele copacilor .", "en": "The Sun's rays appear through the leaves of the trees." },
+        { "k": "fix", "ro": "Zapada de pe vremea Xmas nu mai este stralucitoare pe asfalt .", "en": "The snow from Christmastime is no longer bright on the asphalt." },
+        { "k": "fix", "ro": "Strazile / Trotoarele pe vremea Xmas au fost fixate , acum se pot intelege care este Strada sau Trotuar.", "en": "The streets/sidewalks have been fixed up for the Christmas season; now it’s clear which part is the street and which is the sidewalk." },
+        { "k": "fix", "ro": "Curcubeul nu ar mai trebuii sa apara cat timp ploua .", "en": "The rainbow shouldn't appear while it's raining." }
+      ]
+    },
+    {
+      "v": "2.5.5.6",
+      "date": "21.11.2026",
+      "items": [
+        { "k": "fix", "ro": "Mici probleme fixate ”.", "en": "Fixed an issue in RMS Optional where Mini Map showed as “Currently unavailable”." },
+        { "k": "imp", "ro": "A fost scos butonul de Connect la Discord Rich Presence .", "en": "RMS Christmas is now available to everyone." }      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 4.0,
+  "updateDate": "20.10.2026",
+  "megaUrl": "https://pub-5bd29ae0d24842d1a2217c54005922bb.r2.dev/RMS_GRAPHICS.rar",
+  "sizeGb": 2.6,
+  "changelog": [
+    {
+      "v": "2.5.4.0",
+      "date": "20.10.2026",
+      "items": [
+        {
+          "k": "fix",
+          "ro": "Vegetatia a fost fixata.",
+          "en": "The vegetation has been stabilized."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+name = "rms-pack-worker"
+main = "pack-worker.js"
+compatibility_date = "2026-11-01"
+
+# Variabile simple (NU secrete — pot fi văzute de oricine are acces la contul Cloudflare, dar nu
+# apar nicăieri în launcher). Completează cu valorile tale înainte de "wrangler deploy".
+[vars]
+GUILD_ID = "1570490304619085904"
+ROLE_ID = "1570490336239947778"
+# Numele exact (key-ul) obiectului din bucket-ul R2 — fără "https://.../", doar numele fișierului
+# (sau "folder/RMS_GRAPHICS.rar" dacă e într-un subfolder în bucket).
+OBJECT_KEY = "RMS_GRAPHICS.rar"
+FILENAME = "RMS_GRAPHICS.rar"
+
+# Bucket-ul R2 — PRIVAT (fără acces public r2.dev). Worker-ul citește prin acest „binding",
+# fără chei separate. Schimbă "bucket_name" cu numele bucket-ului tău din Cloudflare R2.
+[[r2_buckets]]
+binding = "PACK_BUCKET"
+bucket_name = "rms"
+
+# Acestea NU se pun aici — se setează ca secrete (nu apar în acest fișier, nici în clar, nicăieri):
+#   wrangler secret put PACK_PASSWORD      -> parola reală a arhivei
+#   wrangler secret put SIGNING_KEY        -> un șir lung, aleator, folosit DOAR de acest Worker ca să
+#                                              semneze jetoanele de descărcare de 10 minute (nu e parola
+#                                              arhivei și nu trebuie să însemne nimic — doar lung și random)
+#   wrangler secret put DISCORD_BOT_TOKEN  -> tokenul botului vostru de Discord (din Developer Portal ->
+#                                              Bot -> Reset Token), ADĂUGAT PE SERVER, cu botul având
+#                                              permisiunea de a vedea membrii (de obicei are deja, dacă
+#                                              rulează alte funcții pe server)
+# (vezi README.md din acest folder pentru toți pașii, în ordine)
